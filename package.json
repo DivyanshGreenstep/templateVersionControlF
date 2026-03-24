@@ -1,6 +1,6 @@
 {
   "name": "@DivyanshGreenstep/templateversioncontrolf",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "React component library with version control templates",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -11,9 +11,6 @@
     "preview": "vite preview"
   },
   "type": "module",
-  "dependencies": {
-    "clsx": "^2.1.1"
-  },
   "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
@@ -26,6 +23,7 @@
     "url": "git+https://github.com/DivyanshGreenstep/templateVersionControlF.git"
   },
   "devDependencies": {
+    "clsx": "^2.1.1",
     "@rollup/plugin-commonjs": "^29.0.2",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "@rollup/plugin-typescript": "^12.3.0",
