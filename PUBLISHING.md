@@ -20,7 +20,7 @@ git init
 
 ### 3. Connect Local to Remote
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/templateversioncontrolf.git
+git remote add origin https://github.com/DivyanshGreenstep/templateVersionControlF.git
 git branch -M main
 git add .
 git commit -m "Initial commit: React button component library"
@@ -45,13 +45,13 @@ git push -u origin main
 ### 2. Configure npm to use GitHub Packages
 ```bash
 npm config set //npm.pkg.github.com/:_authToken YOUR_PAT_HERE
-npm config set @YOUR_USERNAME:registry https://npm.pkg.github.com
+npm config set @DivyanshGreenstep:registry https://npm.pkg.github.com
 ```
 
 Or create/edit `~/.npmrc`:
 ```
 //npm.pkg.github.com/:_authToken=YOUR_PAT_HERE
-@YOUR_USERNAME:registry=https://npm.pkg.github.com
+@DivyanshGreenstep:registry=https://npm.pkg.github.com
 ```
 
 ---
@@ -62,14 +62,14 @@ Make sure your `package.json` has the correct configuration:
 
 ```json
 {
-  "name": "@YOUR_USERNAME/templateversioncontrolf",
+  "name": "@DivyanshGreenstep/templateversioncontrolf",
   "version": "1.0.0",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR_USERNAME/templateversioncontrolf.git"
+    "url": "git+https://github.com/DivyanshGreenstep/templateVersionControlF.git"
   }
 }
 ```
@@ -100,7 +100,7 @@ npm publish
 ```
 
 ### 4. Verify Package
-Visit: `https://github.com/YOUR_USERNAME?tab=packages`
+Visit: `https://github.com/DivyanshGreenstep?tab=packages`
 
 ---
 
@@ -111,18 +111,18 @@ Visit: `https://github.com/YOUR_USERNAME?tab=packages`
 #### 1. Configure Consumer Project
 Create/edit `.npmrc` in the consumer project:
 ```
-@YOUR_USERNAME:registry=https://npm.pkg.github.com
+@DivyanshGreenstep:registry=https://npm.pkg.github.com
 ```
 
 #### 2. Install the Package
 ```bash
-npm install @YOUR_USERNAME/templateversioncontrolf
+npm install @DivyanshGreenstep/templateversioncontrolf
 ```
 
 #### 3. Import & Use
 ```tsx
-import { Button, Showcase } from '@YOUR_USERNAME/templateversioncontrolf';
-import '@YOUR_USERNAME/templateversioncontrolf/dist/styles.css';
+import { Button, Showcase } from '@DivyanshGreenstep/templateversioncontrolf';
+import '@DivyanshGreenstep/templateversioncontrolf/dist/styles.css';
 
 function App() {
   return (
@@ -139,14 +139,14 @@ function App() {
 ### Option B: Use via Git URL (No Auth Needed)
 
 ```bash
-npm install https://github.com/YOUR_USERNAME/templateversioncontrolf.git
+npm install https://github.com/DivyanshGreenstep/templateVersionControlF.git
 ```
 
 Or add to `package.json`:
 ```json
 {
   "dependencies": {
-    "templateversioncontrolf": "github:YOUR_USERNAME/templateversioncontrolf"
+    "templateversioncontrolf": "github:DivyanshGreenstep/templateVersionControlF"
   }
 }
 ```
@@ -175,7 +175,7 @@ npm run dev
 
 ### Updating in Consumer Projects
 ```bash
-npm update @YOUR_USERNAME/templateversioncontrolf
+npm update @DivyanshGreenstep/templateversioncontrolf
 ```
 
 ---
@@ -192,7 +192,7 @@ npm update @YOUR_USERNAME/templateversioncontrolf
 - Check package name matches published scope
 
 ### Styles Not Loading
-- Make sure to import the CSS: `import '@YOUR_USERNAME/templateversioncontrolf/dist/styles.css'`
+- Make sure to import the CSS: `import '@DivyanshGreenstep/templateversioncontrolf/dist/styles.css'`
 - Check build output includes `dist/styles.css`
 
 ### TypeScript Errors
