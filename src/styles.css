@@ -1,0 +1,35 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+.btn-secondary {
+  background: #4b5563;
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  background: transparent;
+}
+
+.btn-sm { height: 32px; padding: 0 12px; }
+.btn-md { height: 40px; padding: 0 16px; }
+.btn-lg { height: 48px; padding: 0 24px; }
+
+.btn-full { width: 100%; }
